@@ -1,0 +1,51 @@
+<!-- fragment_signup.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for entering the profile name -->
+    <EditText
+        android:id="@+id/editTextProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your profile name"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- EditText for entering the username -->
+    <EditText
+        android:id="@+id/editTextSignUpUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your username"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- EditText for entering the password with input type set to textPassword for secure entry -->
+    <EditText
+        android:id="@+id/editTextSignUpPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Buttons for creating a new account and logging in, arranged horizontally -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCreateAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create Account"
+            android:layout_marginEnd="4dp"/>
+
+        <!-- You can add more buttons here if needed -->
+
+    </LinearLayout>
+</LinearLayout>

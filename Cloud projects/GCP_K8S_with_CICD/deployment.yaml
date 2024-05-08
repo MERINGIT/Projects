@@ -1,0 +1,70 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: my-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/merin_PV_dir"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: service-1
+        image: us-central1-docker.pkg.dev/kubernetes-project-416718/microservice1/service1:latest
+        ports:
+        - containerPort: 6000
+        volumeMounts:
+        - name: my-pv
+          mountPath: "/app/data"
+      - name: service-2
+        image: us-central1-docker.pkg.dev/kubernetes-project-416718/microservice2/service2:latest
+        ports:
+        - containerPort: 7000
+        volumeMounts:
+        - name: my-pv
+          mountPath: "/app/data"
+      volumes:
+      - name: my-pv
+        persistentVolumeClaim:
+          claimName: my-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-1-service
+spec:
+  selector:
+    app: my-app  
+  ports:
+    - protocol: TCP
+      port: 80      
+      targetPort: 6000 
+  type: LoadBalancer
+

@@ -1,0 +1,3 @@
+Table:users;Attributes:id, name, email;
+Table:company;Attributes:id, name, email;row0:2,"faith","faith@dal.ca";
+Table:staff;Attributes:id, name, position;row0:1,"mini","mini@dal.ca";row1:2,"john","mary@dal.ca";

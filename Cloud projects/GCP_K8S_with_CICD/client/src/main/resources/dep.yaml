@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: service1
+          image: us-central1-docker.pkg.dev/kubernetes-project-416718/microservice1/service1:latest
+          ports:
+            - containerPort: 6000
+        - name: service2
+          image: us-central1-docker.pkg.dev/kubernetes-project-416718/microservice1/service1:latest
+          ports:
+            - containerPort: 7000
+      volumes:
+        - name: my-pv
+          persistentVolumeClaim:
+            claimName: my-pvc

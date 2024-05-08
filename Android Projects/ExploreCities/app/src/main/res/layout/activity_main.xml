@@ -1,0 +1,23 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#A0E6C4">
+
+<!-- ListView for displaying continents -->
+<ListView
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="#1B1A1A"
+    android:dividerHeight="8dp"
+    android:fitsSystemWindows="true"
+    android:layout_above="@+id/dummyView" />
+
+    <!-- For Extra Spacing -->
+    <View
+    android:id="@+id/dummyView"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>

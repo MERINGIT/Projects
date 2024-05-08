@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ExploreCityProvince</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="kerala">"Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and backwaters, a network of canals. Inland are the Western Ghats, mountains whose slopes support tea, coffee and spice plantations as well as wildlife."</string>
+    <string name="rajasthan">"Rajasthan, India's desert jewel, unfolds in a tapestry of vibrant colors, where turbans and saris glow against golden sands. Majestic forts and opulent palaces whisper tales of valor and romance, standing as timeless sentinels of a glorious past.</string>
+    <string name="kashmir">"Kashmir, draped in ethereal beauty, captivates with its majestic snow-capped peaks and serene Dal Lake, embodying tranquility and splendor amidst political tension."</string>
+    <string name="mumbai">"Mumbai, the bustling metropolis by the Arabian Sea, pulsates with relentless energy and diversity. Skyscrapers pierce the sky while iconic landmarks like the Gateway of India stand as reminders of its colonial past."</string>
+    <string name="goa">"Goa, a coastal paradise, captivates with its vibrant parties and pulsating nightlife, drawing revelers from around the world. Amidst the frenzy, South Goa unveils serene beaches and tranquil retreats, inviting relaxation and introspection."</string>
+    <string name="kolkata">"Kolkata, the bustling metropolis on the banks of the Hooghly River, echoes with the echoes of colonial grandeur and cultural vibrancy. Renowned for its iconic Howrah Bridge and delectable sweets like rosogolla and mishti doi, Kolkata is a captivating blend of rich history and irresistible culinary delights."</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

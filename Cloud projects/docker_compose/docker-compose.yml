@@ -1,0 +1,23 @@
+services:
+  container1:
+    image: mmarysaj/client-api
+    container_name: app1
+    ports:
+      - "6000:6000"
+    volumes:
+      - .:/data
+    networks:
+      - mynetwork
+    depends_on:
+      - container2
+
+  container2:
+    image: mmarysaj/rest-api
+    container_name: app2
+    volumes:
+      - .:/data
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
+    driver: bridge

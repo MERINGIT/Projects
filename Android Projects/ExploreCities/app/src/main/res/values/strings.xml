@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+    <string name="city1">Agra</string>
+    <string name="city2">Jerusalem</string>
+    <string name="city3">Kathmandu</string>
+    <string name="city6">Dublin</string>
+    <string name="city7">athens</string>
+    <string name="city8">Lisbon</string>
+    <string name="city10">Atlanta</string>
+    <string name="city11">Boston</string>
+    <string name="city12">Philadelphia</string>
+    <string name="city14">Brasilia</string>
+    <string name="city15">Rio de Janeiro</string>
+    <string name="city16">Salvador</string>
+    <string name="city17">Caira</string>
+    <string name="city18">Johannesberg</string>
+    <string name="city19">Accra</string>
+    <string name="city20">Canberra</string>
+    <string name="city21">Gee Long</string>
+    <string name="city22">New Castle</string>
+
+
+
+
+</resources>

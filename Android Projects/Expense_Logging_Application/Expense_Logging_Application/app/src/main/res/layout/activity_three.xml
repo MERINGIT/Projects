@@ -1,0 +1,77 @@
+<!-- res/layout/activity_three.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- EditText for entering expense/income name -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+
+    <!-- EditText for entering expense/income amount with decimal input type -->
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText for entering expense/income description -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_below="@+id/editTextAmount"
+        android:layout_marginTop="16dp"/>
+
+    <!-- RadioGroup for selecting expense or income type -->
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/editTextDescription"
+        android:layout_marginTop="16dp">
+
+        <!-- RadioButton for selecting expense type -->
+        <RadioButton
+            android:id="@+id/radioExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense"/>
+
+        <!-- RadioButton for selecting income type -->
+        <RadioButton
+            android:id="@+id/radioIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income"/>
+    </RadioGroup>
+
+    <!-- Button for saving expense/income details -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/radioGroupType"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button for deleting an existing expense/income entry -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_toEndOf="@+id/btnSave"
+        android:layout_below="@+id/radioGroupType"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

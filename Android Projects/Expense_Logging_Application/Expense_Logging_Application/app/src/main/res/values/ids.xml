@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonLogin" type="id" />
+    <item name="buttonSignUp" type="id" />
+    <item name="editTextPassword" type="id" />
+    <item name="editTextUsername" type="id" />
+    <item name="fragment_Container" type="id" />
+    <item name="editTextSignUpUsername" type="id" />
+    <item name="editTextSignUpPassword" type="id" />
+    <item name="buttonCreateAccount" type="id" />
+    <item name="editTextProfileName" type="id" />
+    <item name="recyclerViewExpenses" type="id" />
+    <item name="btnLogout" type="id" />
+    <item name="btnAddExpense" type="id" />
+    <item name="tvProfileName" type="id" />
+    <item name="textViewAmount" type="id" />
+    <item name="textViewName" type="id" />
+    <item name="btnSave" type="id" />
+    <item name="btnDelete" type="id" />
+    <item name="editTextName" type="id" />
+    <item name="editTextAmount" type="id" />
+    <item name="editTextDescription" type="id" />
+    <item name="radioGroupType" type="id" />
+    <item name="radioIncome" type="id" />
+    <item name="radioExpense" type="id" />
+    <item name="fragment_container" type="id" />
+    <item name="btnEdit" type="id" />
+</resources>
